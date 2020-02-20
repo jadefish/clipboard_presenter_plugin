@@ -1,0 +1,32 @@
+// https://www.typescriptlang.org/docs/handbook/compiler-options.html
+{
+    "compilerOptions": {
+        "incremental": true,
+        "target": "ES2019",
+        "module": "commonjs",
+        "sourceMap": true,
+        "baseUrl": "src",
+        "paths": {
+            "@/*": ["*"]
+        },
+        "outDir": "./build",
+        "composite": true,
+
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "forceConsistentCasingInFileNames": true,
+
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": false,
+    }
+}

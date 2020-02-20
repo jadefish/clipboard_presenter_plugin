@@ -4,7 +4,7 @@ module Voom
   module Presenters
     module Plugins
       module Clipboard
-        VALID_ACTIONS = %i[cut copy paste].freeze
+        VALID_ACTIONS = %i[cut copy].freeze
 
         class Action < DSL::Components::Actions::Base
           attr_reader :action,

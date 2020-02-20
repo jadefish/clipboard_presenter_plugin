@@ -1,0 +1,29 @@
+{
+    "presets": [
+        ["@babel/env", {
+            "targets": {
+                "chrome": "42",
+                "edge": "12",
+                "firefox": "41",
+                "ie": "9",
+                "opera": "29",
+                "safari": "10"
+            }
+        }],
+        "@babel/typescript"
+    ],
+    "plugins": [
+        "@babel/proposal-class-properties"
+    ],
+    "sourceType": "unambiguous",
+
+    "env": {
+        "test": {
+            "plugins": [
+                ["@babel/plugin-transform-runtime", {
+                    "regenerator": true
+                }]
+            ]
+        }
+    }
+}
