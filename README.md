@@ -1,16 +1,15 @@
 # clipboard_presenter_plugin
 
-A plugin for [voom/presenters](https://github.com/rx/presenters) which
-provides clipboard interaction via the
-[clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API).
+The clipboard_presenter_plugin is a plugin for
+[rx/presenters](https://github.com/rx/presenters) which provides clipboard
+interaction.
 
 ## Actions
 
 The clipboard_presenter_plugin provides the following actions:
 
 * Copy from an element: `clipboard copy: :some_field`
-* Cut from a mutable element: `clipboard cut: :another_field`
-* Paste into a mutable element: `clipboard paste: :receiving_field`
+* Cut from an element: `clipboard cut: :some_field`
 
 ## Usage
 
@@ -55,4 +54,27 @@ end
 
 ## Browser support
 
-Currently, the clipboard Presenters plugin only supports Chrome. :(
+The following browsers are considered officially supported:
+
+* Chrome 42+
+* Edge 12+
+* Firefox 41+
+* Safari 10+
+
+## Building
+
+0. `nvm use && npm i`
+1. `npm run type-check`
+2. Compile TS to JS: `npm run build` (output: `views/clipboard/build`)
+3. Transpile and bundle via Babel and Webpack: `npm run bundle:dev` (output:
+   `dist/bundle.js`)
+
+Or, `npm run watch` to watch `views/clipboard/src` for changes and run steps 1-3 above.
+
+## Contributing
+
+1. Fork it
+2. Branch it
+4. Fix it
+4. PR it
+5. Done!

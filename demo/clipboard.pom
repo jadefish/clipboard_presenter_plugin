@@ -8,35 +8,11 @@ Voom::Presenters.define(:clipboard, namespace: :plugins) do
     indented_grid do
       headline 'Copy'
       text_field id: :copy_me do
-        value 'Copy that.'
+        value "Don't copy that floppy!"
       end
       button :copy, type: :raised do
         event :click do
           clipboard copy: :copy_me
-        end
-      end
-    end
-
-    indented_grid do
-      headline 'Cut'
-      text_field id: :cut_me do
-        value 'Prepare to get cut!'
-      end
-      button :cut, type: :raised do
-        event :click do
-          clipboard cut: :cut_me
-        end
-      end
-    end
-
-    indented_grid do
-      headline 'Paste'
-      text_field id: :paste_me do
-        value 'Do not eat paste.'
-      end
-      button :paste, type: :raised do
-        event :click do
-          clipboard paste: :paste_me
         end
       end
     end
